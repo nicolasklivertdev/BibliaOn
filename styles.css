@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    font-weight: 700;
+    color: white;
+}
+
+img {
+    border-radius: 5px;
+    width: 150px;
+}
+
+body {
+    background-color: rgb(242, 241, 240);
+}
+
+.container {
+    margin: auto;
+    max-width: 615px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    gap: 10px;
+}
+
+header h1 {
+    margin-left: 38px;
+    font-size: 22px;
+}
+
+.banner {
+    margin-right: 22px;
+    margin-left: 22px;
+    margin-bottom: 22px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgb(39, 82, 81);
+    color: white;
+}
+
+.assista, .escute, .leia {
+    display: flex;
+    flex-direction: column;
+}
+
+.assista, .escute {
+    border-bottom: 1px solid white;
+}
+
+.assista h2, .escute h2, .leia h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.assista .row, .escute .row {
+    padding-bottom: 10px;
+}
+
+.assista p, .escute p {
+    margin-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.row p {
+    font-size: 15px;
+    width: 70%;
+}
+
+.youtube {
+    border: 1px solid white;
+    width: 130px;
+}
+
+.comprar {
+    margin-left: 15px;
+    width: 145px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 22px;
+    margin-left: 22px;
+    margin-bottom: 22px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    border: 1px solid rgb(222, 218, 215);
+    border-radius: 12px;
+    background-color: rgb(235, 229, 223);
+}
+
+section h1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+section p {
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 16px;
+    width: 75%;
+}
+
+section button {
+    padding: 8px;
+    padding-right: 22px;
+    padding-left: 22px;
+    border: 1px solid black;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 22px;
+    margin-left: 22px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 12px;
+    gap: 10px;
+    background-color: rgb(250, 235, 205);
+}
+
+footer h1 {
+    font-size: 21px;
+    color: rgb(77, 68, 52);
+}
+
+.Email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    border: 1px solid rgb(217, 189, 139);
+    border-radius: 8px;
+    background-color: white;
+}
+
+input {
+    margin-left: 8px;
+    font-size: 16px;
+    width: 65%;
+}
+
+::-webkit-input-placeholder {
+    font-size: 16px;
+}
+
+.Email button {
+    padding: 9px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+    background-color: rgb(240, 80, 31);
+    color: white;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 11px;
+    color: rgb(99, 99, 99);
+}
+
+@media screen and (max-width: 499px) {
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .row p {
+        width: 100%;
+    }
+
+    .comprar {
+        margin-left: 0;
+    }
+
+}
