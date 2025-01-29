@@ -13,7 +13,7 @@ a {
 
 img {
     border-radius: 5px;
-    width: 150px;
+    width: 43px;
 }
 
 body {
@@ -62,15 +62,12 @@ header h1 {
 }
 
 .assista .row, .escute .row {
-    padding-bottom: 10px;
-}
-
-.assista p, .escute p {
-    margin-right: 25px;
+    padding-bottom: 20px;
 }
 
 .row {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -79,14 +76,54 @@ header h1 {
     width: 70%;
 }
 
+.row-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    gap: 10px;
+    width: 27%;
+    background-color: black;
+}
+
+.row-button:hover {
+    cursor: pointer;
+}
+
+.row-button h3 {
+    font-size: 18px;
+}
+
+.row-title {
+    display: flex;
+    flex-direction: column;
+    line-height: 16px;
+}
+
+#row-spotify {
+    margin-bottom: 4px;
+}
+
+.row-title p {
+    font-size: 14px;
+    width: 100%;
+}
+
+.row-title span {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
 .youtube {
     border: 1px solid white;
     width: 130px;
 }
 
-.comprar {
-    margin-left: 15px;
-    width: 145px;
+.spotify, .comprar {
+    width: 35px;
 }
 
 section {
@@ -190,6 +227,24 @@ span {
     color: rgb(99, 99, 99);
 }
 
+@media screen and (max-width: 600px) {
+    img {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    img {
+        width: 37px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    img {
+        width: 33px;
+    }
+}
+
 @media screen and (max-width: 499px) {
     .row {
         flex-direction: column;
@@ -201,8 +256,7 @@ span {
         width: 100%;
     }
 
-    .comprar {
-        margin-left: 0;
+    .row-button {
+        padding: 8px 20px;
     }
-
 }
